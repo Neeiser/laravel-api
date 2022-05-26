@@ -6,7 +6,19 @@
 
 <script>
 export default {
-    name: 'VueMain'
+    name: 'VueMain',
+    data(){
+        return {
+            posts: [],
+            categories: [],
+            users: [],
+
+            apiURL: 'http://localhost:8000/api/posts',
+
+            nextPageURL: null,
+            lastPageURL: null,
+        }
+    }
 }
 </script>
 
